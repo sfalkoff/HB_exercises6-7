@@ -1,5 +1,4 @@
-# from string import punctuation
-input_file = open('testfile.txt') # open/read twain.txt
+input_file = open('twain.txt') # open/read twain.txt
 
 # creates dict called word_count and sets initial count to 1
 word_count = {}
