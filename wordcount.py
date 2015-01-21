@@ -1,3 +1,5 @@
+# from string import punctuation
+
 input_file = open('testfile.txt') # open/read twain.txt
 
 #creates dict called word_count and sets initial count to 1
@@ -13,6 +15,7 @@ for line in input_file:
     for word in separate_line:
         # turns words to camelcase
         word = word.capitalize()
+#        word = word.translate(None, word.punctuation())
         # if camelcase word is not a key in dict, add it to the dict
         if word not in word_count.keys():
             word_count[word] = 1 # adds as a key with value 1
@@ -22,3 +25,12 @@ for line in input_file:
 
 for word, count in word_count.iteritems():
     print "%s %s" % (word, count)
+
+# string.split(",")
+# string.strip()
+# dict.get()
+# dict.iteritems()
+
+# sorts all alphabetically:
+# for word, count in sorted(word_count.iteritems()):
+#     print "%s %s" % (word, count)
