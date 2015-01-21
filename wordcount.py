@@ -1,6 +1,6 @@
 input_file = open('twain.txt') # open/read twain.txt
 
-# creates dict called word_count and sets initial count to 1
+# creates dict called word_count
 word_count = {}
 
 # creates list called separate_line of individual words in each line
