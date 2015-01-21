@@ -12,5 +12,5 @@ for line in restaurants:
     all_restaurants[restaurant_data[0]] = restaurant_data[1]
 
 # sorts alphabetically before printing
-for restaurant_name, rating in sorted(all_restaurants.items()):
+for restaurant_name, rating in sorted(all_restaurants.iteritems()):
     print "Restaurant %s is rated at %s." % (restaurant_name, rating)
